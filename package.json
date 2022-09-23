@@ -1,6 +1,6 @@
 {
   "name": "jest-coverage-badges-aws",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Jest Coverage Badges creation and upload to AWS",
   "main": "index.js",
   "scripts": {

@@ -1,13 +1,24 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'Jest Coverage Badges AWS'
+description: 'Create Jest coverage badges and upload them to a AWS S3 bucket'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  coverage-path:
+    description: 'Path where your coverage-summary is located'
+  aws-bucket:  # id of input
+    description: 'Name of the bucket where the badges will be located'
     required: true
-    default: '1000'
+  aws-bucket-folder:
+    description: 'Name of the folder/key in the bucket where the badges will be located'
+    required: true
+  
 outputs:
-  time: # output will be available to future steps
-    description: 'The current time after waiting'
+  badges-urls: # output will be available to future steps
+    description: 'Path where your badges where upload on the bucket'
 runs:
   using: 'node16'
   main: 'dist/index.js'
+
+# https://actions-cool.github.io/github-action-branding/
+branding:
+  icon: 'info'
+  color: 'gray-dark'
+

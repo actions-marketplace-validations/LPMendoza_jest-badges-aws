@@ -69,5 +69,3 @@ typings/
 # Test folders
 badgesByProject/*
 coverage/
-
-.DS_Store

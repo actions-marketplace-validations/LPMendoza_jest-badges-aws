@@ -22,7 +22,7 @@ function uploadToAWS(bucket, target, pathFile) {
             console.log(`${putError}\n`);
             reject();
           } else {
-            core.setOutput('coverage-badge-path', `target`);
+            core.setOutput('coverage-badge-path', `${target}`);
             console.log(`Successfully uploaded '${target}'`);
             resolve();
           }

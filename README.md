@@ -58,6 +58,7 @@ jobs:
           aws-bucket:  ${{ secrets.AWS_BADGES_BUCKET }}
           aws-bucket-folder: 'badgejest'
 ```
+The file name will be save as ```coverage-jest-coverage.svg``` in the bucket you provided.
 ## Inputs
 - **coverage-path:** Path where your coverage-summary.json file is located.
 - **aws-bucket:** Bucket name of AWS where you want to upload the badges. It's recommended to use this input as a secret to keep this data safe. 

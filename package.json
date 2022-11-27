@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/LPMendoza/jest-badges-aws#readme",
   "dependencies": {
-    "@actions/core": "^1.2.5",
+    "@actions/core": "^1.10.0",
     "aws-sdk": "^2.1222.0",
     "node-jest-badges": "^1.3.3"
   },
